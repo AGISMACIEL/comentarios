@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Agis Maciel"/>
+    <title>Comentário:</title>
+    <!-- CSS externo -->
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" media="all"/>
+</head>
+<body>
+    <header>
+        <h1>Deixe o seu comentário aqui:</h1>
+        <hr />
+        </header>
+        <main>
+            <div class="container">
+                <form onsubmit="return false;">
+                    <label>Informe o seu nome:</label><br />
+                    <textarea rows="2" cols="180" type="text" placeholder="Informe o seu nome completo aqui" id="nome" class="ipt-altura largura-maxima"/></textarea><br /><br />
+                    <label>Deixe o seu comentário:</label><br />
+                    <textarea rows="14" cols="180" class="comentario largura-maxima" placeholder="Digite o seu comentário" id="comentario" ></textarea><br /><br />
+                    <br />
+                    <label>Edição:</label><br/>
+                    <label>Cor do Texto:</label>
+                    <input type="color" id="cor-texto" />
+                    <label>Cor Fundo:</label>
+                    <input type="color" id="cor-fundo" value="#ffffff" />
+                    <br /><br />
+                    <hr />
+                    <button class="ipt-altura" onclick="vetor();">Enviar</button>
+                </form> 
+                <hr />
+                
+                <!-- resultado  -->
+                <div id="comentarios"></div>
+                
+            </div>
+        </main>
+    <!-- meu js -->
+    <script src="js/script.js"></script>
+</body>
+</html>

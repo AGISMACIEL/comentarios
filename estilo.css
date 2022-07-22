@@ -1,0 +1,8 @@
+.container {
+    margin: 50px 100px;
+}
+
+.comentario{
+    rows: 4px;
+    column-width: 180;
+}
